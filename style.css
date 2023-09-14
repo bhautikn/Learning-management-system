@@ -1,0 +1,230 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/************** variables **************/
+:root{
+	--dark:#222;
+	--light:white;
+	--red: rgba(250, 0, 0, 0.4);
+	--shadow: gray;
+	--green: rgba(0, 255, 255, 0.4);
+	--gray:#777;	
+}
+/***************************************/
+
+body{
+	background-color: var(--dark);
+}
+.title{
+	text-align: center;
+	color: var(--light);
+}
+.fonts{
+	color: var(--light);
+	font-size: 1em;
+}
+.inputs{
+	height: 30px;
+	box-shadow: none;
+	font-size: 1em;
+	color: var(--light);
+	background-color: var(--dark);
+}
+input[type=text],input[type=password],input[type=email]{
+	border: none;
+	border-bottom: 3px solid var(--gray);
+	transition-duration: 0.4s;
+}
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{
+	border: none;
+	border-bottom: 3px solid seagreen;
+	outline: none;
+}
+.btn{
+	box-shadow: none;
+	color: white;
+	border: none;
+}
+.btn:hover{
+	background-color: gray;
+	cursor: pointer;
+}
+select{width: 50px}
+
+table{
+	padding: 20px;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 15px black !important;
+}
+input[type=submit]{
+	width: 70%;
+	box-shadow: none;
+	background: #265;
+	cursor: pointer;
+}
+.sucsess{
+	font-size: 1.1em;
+	margin: 10px auto;
+	padding: 10px;
+	width: 30%;
+	font-weight: 700;
+	border-radius: 2px;
+	color: var(--light);
+	text-align: center;
+	background-color:rgba(0, 255, 255, 0.4);
+}
+.fail{
+	font-size: 1.1em;
+	margin: 10px auto;
+	padding: 10px;
+	font-weight: 700;
+	width: 30%;
+	text-align: center;
+	border-radius: 2px;
+	color: white;
+	background-color: rgba(250, 0, 0, 0.4);
+}
+.text{
+	color: white !important;
+}
+.navigation{
+	background-color: rgba(20, 60, 70, 1.0);
+	padding: 7px;
+	margin: 15px;
+}
+.fa-arrow-left:hover{
+	color: black;
+}
+
+/******** start index page css *********/
+
+.most-outer-div{
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 40px;
+	padding: 10px;
+	box-shadow: inset 1px 1px 10px black;
+	float: left;
+	width: 20%;
+}
+.left-div-img{
+	height: 100%;
+	width: 100%;
+}
+.left-div-img img{
+	height: 100%;
+	border-radius: 50px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	transition-duration: 500ms;
+	filter: drop-shadow(5px 10px 10px);
+}
+.left-div-img img:hover{
+	transform: translateY(-5px);
+	/* top: -5px; */
+}
+.right-div-content{
+	height: 100%;
+	align-content: center;
+	font-size: 1.1em;
+	/* flex-item: center; */
+	padding: 20px;
+}
+.right-div-content>div{
+	padding: 4px 13px;
+	margin: 4px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: default;
+	width: 100%;
+	background-color: rgba(46,139,87, 0.2);
+	color: seagreen;
+}
+.right-div-content>div:hover{
+	box-shadow: 2px 2px 10px black;
+	transition-duration: 0.5s;
+}
+
+/*****************************/
+/****** start LMS css ********/
+
+.lms_main{
+	margin: 30px;
+}
+.lms_contain{
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 80px;
+	width: 100%;
+}
+.lms_contain1{
+	float: left;
+	height: 100%;
+	width: 80%;
+}
+.lms_contain2{
+	float: right;
+	height: 100%;
+	width: 20%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.lms_contain2 div:first-child{
+	color: var(--green);
+	height: 60%;
+	padding: 5px;
+	text-align: center;
+}
+.fa-download:hover,.fa-upload:hover{
+	color: seagreen;
+}
+.lms_contain2 div:last-child{
+	color: gray;
+	padding: 5px;
+	text-align: center;
+}
+.lms_contain1 .lms_title{
+	float: left;
+	height: 50%;
+	width: 60%;
+	padding: 5px;
+	display: block;
+	text-align: center;
+}
+.lms_contain .lms_title div{
+	background-color: rgba(65, 105, 225, 0.2);
+	color: dodgerblue;
+	border-radius: 20px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 7px 10px;
+	font-weight: 700;
+}
+.lms_contain1 .faculty{
+	float: left;
+	width: 40%;
+	height: 50%;
+	text-align: center;
+	color: var(--gray);
+	font-family: monospace;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 5px;
+	line-height: 17px;
+}
+.lms_contain1 .comment{
+	height: 50%;
+	float: left;
+	width: 80%;
+	padding: 5px;
+	font-family: monospace;
+	color: var(--gray);
+}
+.input_div{
+	float:right;
+	width:fit-content;
+	background-color: rgba(46,139,87, 0.2);
+	padding:9px;
+	height: 50%;
+}
+.input_div i{
+	color: seagreen;
+}
