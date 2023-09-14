@@ -8,4 +8,4 @@ sudo chmod 777 LMS Assign_LMS
 sudo docker-compose up
 ```
 
-server starts on 80 and 443 port
+server starts on localhost whith 80 and 443 port
