@@ -9,3 +9,12 @@ sudo docker-compose up
 ```
 
 server starts on localhost with 80 and 443 port
+## # login
+### admin panal
+Username: admin
+
+Password: admin
+### Student panal
+Username: student
+
+Password: student
